@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" >
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -44,5 +45,18 @@
         </form>
     </div>
 </nav>
+
+<div class="container">
+    <div class="row">
+        @foreach($posts as $post)
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">{{$post->short_title}}</div>
+                    <div class="card-body">{{$post->descr}}</div>
+            </div>
+        </div>
+        @endforeach
+    </div>
+</div>
 </body>
 </html>
