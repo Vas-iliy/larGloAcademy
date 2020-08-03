@@ -19,7 +19,6 @@
             <li class="nav-item active offset-3">
                 <a class="nav-link" href="/">Создать пост <span class="sr-only">(current)</span></a>
             </li>
-
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Найти пост" aria-label="Search">
@@ -33,8 +32,12 @@
         @foreach($posts as $post)
         <div class="col-6">
             <div class="card">
-                <div class="card-header">{{$post->short_title}}</div>
-                    <div class="card-body">{{$post->descr}}</div>
+                <div class="card-header"><h2>{{$post->short_title}}</h2></div>
+                    <div class="card-body">
+                        <div class="card-img" style="background-image: url({{ $post->img ?? asset('assets/img/default.jpg') }})"></div>
+                        <div class="card-author">Автор: {{$post->name}}</div>
+                        <a href="#" class="btn btn-outline-primary">Посмотреть пост</a>
+                    </div>
             </div>
         </div>
         @endforeach
