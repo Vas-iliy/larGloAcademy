@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36529fc4-a20a-4c6a-acc3-57f1eb4fe64c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/larGloAcademy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larGloAcademy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/404.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +195,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -212,10 +207,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\server\OpenServer\domains\larGloAcademy\public\assets\img" />
       <recent name="D:\server\OpenServer\domains\larGloAcademy\resources\lang" />
       <recent name="D:\server\OpenServer\domains\larGloAcademy\resources\views\posts" />
       <recent name="D:\server\OpenServer\domains\larGloAcademy\resources\views\layouts" />
-      <recent name="D:\server\OpenServer\domains\larGloAcademy\public\assets\img" />
       <recent name="D:\server\OpenServer\domains\larGloAcademy\public\assets" />
     </key>
   </component>
@@ -249,7 +244,7 @@
       <updated>1595422563908</updated>
       <workItem from="1595422565088" duration="6698000" />
       <workItem from="1596454516398" duration="27659000" />
-      <workItem from="1596794892221" duration="1385000" />
+      <workItem from="1596794892221" duration="2968000" />
     </task>
     <servers />
   </component>
