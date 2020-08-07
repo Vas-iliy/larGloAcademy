@@ -10,6 +10,12 @@ use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
+
+    public function __construct ()
+    {
+        $this->middleware('auth')->except('index', 'show');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -77,6 +83,11 @@ class PostController extends Controller
     {
         $post = Post::join('users', 'author_id', '=', 'users.id')
                 ->find($id);
+
+        if (!$post) {
+            return redirect()->route('post.index')->withErrors('Ты шо тут забыл?');
+        }
+
         return view('posts.show', compact('post'));
     }
 
@@ -89,6 +100,10 @@ class PostController extends Controller
     public function edit($id)
     {
         $post = Post::find($id);
+
+        if (!$post) {
+            return redirect()->route('post.index')->withErrors('Ты шо тут забыл?');
+        }
 
         if ($post->author_id != \Auth::user()->id) {
             return redirect()->route('post.index')->withErrors('Вы не можете редактировать данный пост');
@@ -107,6 +122,10 @@ class PostController extends Controller
     public function update(PostRequest $request, $id)
     {
         $post = Post::find($id);
+
+        if (!$post) {
+            return redirect()->route('post.index')->withErrors('Ты шо тут забыл?');
+        }
 
         if ($post->author_id != \Auth::user()->id) {
             return redirect()->route('post.index')->withErrors('Вы не можете редактировать данный пост');
@@ -140,6 +159,10 @@ class PostController extends Controller
     public function destroy($id)
     {
         $post = Post::find($id);
+
+        if (!$post) {
+            return redirect()->route('post.index')->withErrors('Ты шо тут забыл?');
+        }
 
         if ($post->author_id != \Auth::user()->id) {
             return redirect()->route('post.index')->withErrors('Вы не можете удалить данный пост');
